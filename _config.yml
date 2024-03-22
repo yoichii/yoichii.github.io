@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Yoichii Blog
+title: "Yoichii on Tech"
+author: "yoichii"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: yoichii
@@ -27,6 +28,31 @@ github_username: yoichii
 theme: minima
 plugins:
   - jekyll-feed
+
+
+# Custom settings
+
+defaults:
+  # Multi language settings
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+  - scope:
+      path: "ja"
+    values:
+      lang: "ja"
+  # Set post type
+  - scope:
+      path: "en/_posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "ja/_posts"
+    values:
+      layout: "post"
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,15 @@
+---
+# Front matter tells Jekyll to process this file
+---
+<script>
+  var userLang = navigator.language || navigator.userLanguage;
+
+  if (userLang.includes("ja")) {
+    window.location.href = '/ja/';
+  } else {
+    window.location.href = '/en/';
+  }
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=/en/">
+</noscript>

@@ -1,0 +1,6 @@
+---
+title:  "An Example Post"
+date:   2024-03-23 00:00:00 +0900
+categories: example
+---
+This is an example post.

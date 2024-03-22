@@ -1,0 +1,5 @@
+{% if page.lang == 'en' %}
+  <a href="{{ page.url | replace_first: '/en/', '/ja/' | absolute_url }}" >ja</a>
+{% elsif page.lang == 'ja' %}
+  <a href="{{ page.url | replace_first: '/ja/', '/en/' | absolute_url }}" />en</a>
+{% endif %}
