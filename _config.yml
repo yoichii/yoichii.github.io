@@ -19,15 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Yoichii on Tech"
-author: "yoichii"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: yoichii
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 
 # Custom settings
@@ -53,6 +50,10 @@ defaults:
       layout: "post"
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
+minima:
+  social_links:
+    - platform: github
+      user_url: "https://github.com/yoichii"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
