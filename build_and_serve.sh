@@ -1,3 +1,2 @@
 #!/bin/bash
-jekyll build
-jekyll serve
+bundle exec jekyll serve --baseurl=""
