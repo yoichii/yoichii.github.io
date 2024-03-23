@@ -1,5 +1,7 @@
+<span class="lang-switch">
 {% if page.lang == 'en' %}
-  <a href="{{ page.url | replace_first: '/en/', '/ja/' | absolute_url }}" >ja</a>
+  <a class="page-link" href="{{ page.url | replace_first: '/en/', '/ja/' | absolute_url }}" >ja</a>
 {% elsif page.lang == 'ja' %}
-  <a href="{{ page.url | replace_first: '/ja/', '/en/' | absolute_url }}" />en</a>
+  <a class="page-link" href="{{ page.url | replace_first: '/ja/', '/en/' | absolute_url }}" />en</a>
 {% endif %}
+</span>
