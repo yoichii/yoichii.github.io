@@ -3,7 +3,15 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="
+    {% if page.layout == 'post' %}
+        blog-post
+    {% else if page.layout == 'home' %}
+        home-page
+    {% else %}
+        default-page
+    {% endif %}
+  ">
 
     {%- include header.html -%}
 
