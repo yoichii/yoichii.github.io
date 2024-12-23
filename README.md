@@ -6,6 +6,10 @@
 
 ## Blog Upgrades
 
+### Enhance Layout and Styles
+* Add a specific class for post types in the `<body>` tag within `_layouts/base.html`.
+* Add custom styles in `_scss/minima/custom-styles`.
+
 ### Make My Blog Multilingual
 * Create separate article directories for each language:
     * Set up `ja` and `en` directories.
